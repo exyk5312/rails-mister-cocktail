@@ -1,0 +1,3 @@
+<h1><%= @dose.description %> <%= @dose.ingredient.name %></h1>
+<p><%= link_to "delete this dose", dose_path(@dose) %></p>
+<p><%= link_to "back to cocktail", cocktail_path(params[:id]) %></p>
