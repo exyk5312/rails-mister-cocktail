@@ -1,7 +1,9 @@
 <h1> All cocktail: </h1>
 <% @cocktails.each do |cocktail| %>
- <h2> <%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-<% end %>
 
+<div class="card-category p-5 m-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn01.leenkus.com/upload/instant/5dabe68e5c9cffb78310e73f/1588442576_4000.jpg)">
+  <%= link_to cocktail.name, cocktail_path(cocktail) %>
+</div>
+<% end %>
 
 <%= link_to "Add a new cocktail here", new_cocktail_path %>
