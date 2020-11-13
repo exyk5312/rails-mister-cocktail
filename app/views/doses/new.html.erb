@@ -1,7 +1,8 @@
-<h1>Select doses</h1>
-
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<h1 class='text-center'>Select doses</h1>
+<div class="d-flex justify-content-center m-5">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.button :submit, class: "btn-primary" %>
+  <% end %>
+</div>
