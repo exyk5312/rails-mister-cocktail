@@ -2,7 +2,7 @@
   <h1><%= @cocktail.name %> </h1>
 </div>
 <div class="d-flex justify-content-center rounded">
-  <%= cl_image_tag(@cocktail.photo.key, width: 300, height: 300) %>
+  <%= cl_image_tag(@cocktail.photo.key, width: 300, height: 300, class: 'round-tag') %>
 </div>
 <div class="d-flex justify-content-center pt-1">
   <ul>
