@@ -1,0 +1,20 @@
+#new_cocktail {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5%;
+  background-color: lightgray;
+  border: black solid 2px;
+
+    #cocktail_name {
+      width: 40%;
+      justify-content: center;
+    }
+
+    #cocktail_photo {
+      justify-content: center;
+    }
+}
+
+.form-cocktail {
+  margin: 0 auto;
+}

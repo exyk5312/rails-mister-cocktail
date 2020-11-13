@@ -1,8 +1,13 @@
-<h1> All cocktail: </h1>
-<% @cocktails.each do |cocktail| %>
-<div class="card-category p-5 m-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path(cocktail.photo.key) %>')">
-  <%= link_to cocktail.name, cocktail_path(cocktail) %>
+<h1 class='text-center'> All cocktail: </h1>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="card-category p-3 m-1 col-sm" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path(cocktail.photo.key) %>')">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+    <% end %>
+  </div>
 </div>
-<% end %>
-
-<%= link_to "Add a new cocktail here", new_cocktail_path %>
+<div class="btn btn-primary btn-lg d-flex justify-content-center m-5 ">
+  <%= link_to "Add a new cocktail here", new_cocktail_path, :class => 'btn' %>
+</div>
